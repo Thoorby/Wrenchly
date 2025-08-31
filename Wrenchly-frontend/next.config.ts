@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  experimental: {
+    turbo: false, // disable Turbopack to avoid the 'to' argument error
+  },
 };
 
 export default nextConfig;
